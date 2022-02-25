@@ -1,0 +1,41 @@
+<button type="button" class="btn btn-default btn-primary"
+   popover="Welcome to Tutorialspoint." [outsideClick]="true">
+   Default Popover
+</button>
+<button type="button" class="btn btn-default btn-primary"
+   popover="Welcome to Tutorialspoint."
+   popoverTitle="Tutorialspoint" 
+   [outsideClick]="true"
+   placement="right">
+   Right Aligned popover
+</button>
+
+
+
+<div class="row">
+    <div class="col-sm-4">
+       <div class="mb-2">
+          <progressbar [value]="value"></progressbar>
+       </div>
+    </div>
+    <div class="col-sm-4">
+       <div class="mb-2">
+          <progressbar [value]="value" type="warning"
+             [striped]="true">{{value}}%</progressbar>
+       </div>
+    </div>
+    <div class="col-sm-4">
+       <div class="mb-2">
+          <progressbar [value]="value" type="danger" 
+             [striped]="true" [animate]="true"
+             ><i>{{value}} / {{max}}</i></progressbar>
+       </div>
+    </div>
+
+
+    <div>
+        <input type="text" class="form-control" id="mobile-phone" mask="000.000.000-00" [showMaskTyped]="true" required formControlName="CPF" />
+
+           </div>
+    
+ </div> 

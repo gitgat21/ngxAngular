@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class Test1Component implements OnInit {
   max: number = 100;
   value: number = 45;
-
+ 
+  
   constructor() { }
 
   ngOnInit(): void {
